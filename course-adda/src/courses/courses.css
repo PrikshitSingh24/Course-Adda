@@ -1,0 +1,127 @@
+
+
+.titleDashboard{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.titleOfCourse{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.titleInput{
+    height: 40px;
+    margin-left: 95px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-top: 5px;
+}
+.descriptionOfCourse{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.descriptionInput{
+    height: 40px;
+    width: 600px;
+    margin-left: 50px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-top: 5px;
+}
+.priceOfCourse{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.priceOfCourseInput{
+    height: 40px;
+    margin-left: 90px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-top: 5px;
+}
+
+.imageLinkOfCourse{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+.imageLinkInput{
+    height: 40px;
+    width: 600px;
+    margin-left: 45px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-top: 5px;
+}
+
+.publishedOfCourse{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.publishedInput{
+    height: 40px;
+    margin-left: 52px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-top: 5px;
+}
+
+.submitBtn{
+    margin-left: 350px;
+    margin-top: 60px;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+    color:wheat
+}
+
+.divider{
+    display: flex;
+    flex-direction: row;
+}
+
+.list{
+    background-color:wheat;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 700px;
+    width: 1000px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.publishTitle{
+    margin-left: 20px;
+}
+
+.courseData{
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+    overflow: scroll;
+    width: 800px;
+    height: 600px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.collectionUpdate{
+    display: flex;
+    flex-direction: row;
+}
+
+.updateButton{
+    margin-left: 20px;
+    margin-top: 25px;
+    height: 30px;
+    width: 100px;
+}

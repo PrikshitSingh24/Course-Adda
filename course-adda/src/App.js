@@ -1,5 +1,7 @@
 import './App.css';
+import Dashboard  from './courses/courses';
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route,Routes,useNavigate} from "react-router-dom";
 
 function Utensils(){
   const [screen,setScreen]=useState(false);
@@ -11,6 +13,7 @@ function Utensils(){
   }
   return(
     <>
+
     <div class="box">
       <div class="buttonContained">
       <button class="loginButton">Login</button>
@@ -23,6 +26,7 @@ function Utensils(){
 }
 
 function LoginDetails(){
+  const navigate=useNavigate();
   const [username,setUsername]=useState("");
   const [password,setPassword]=useState("");
   const handleLogin=()=>{
@@ -37,8 +41,11 @@ function LoginDetails(){
     .then((response)=>response.json())
     .then((data)=>{
       console.log(data);
-      alert(data.message);
-      localStorage.setItem("loginToken",data.token);
+      if(data.token){
+        localStorage.setItem("loginToken",data.token);
+        navigate("/dashboard");
+      }
+      
     })
     .catch((error)=>{
       console.error(error);
@@ -123,15 +130,18 @@ function SignupDetails(props){
 function App() {
   
   return (
-    <>
+     <Router>
     <div class="background">
       <div class="plate">
         <h1 class="title">Course Adda</h1>
-        <Utensils/>
+        <Routes>
+         <Route exact path='/' Component={Utensils}/>
+        <Route path='/dashboard' Component={Dashboard}/>
+        </Routes>
+       
       </div>
     </div>
-    
-    </>
+    </Router>
   );
 }
 
